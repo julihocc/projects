@@ -7,7 +7,7 @@ async function checkEmotion(knownEmotions, emotion) {
 	return knownEmotions.has(emotion);
 }
 
-async function speak(knownEmotions, newEmotion, phrase) {
+async function spak(knownEmotions, newEmotion, phrase) {
 	if (!(await checkEmotion(knownEmotions, newEmotion))) {
 		throw new Error(`Does not compute. I do not understand ${newEmotion}.`);
 	}

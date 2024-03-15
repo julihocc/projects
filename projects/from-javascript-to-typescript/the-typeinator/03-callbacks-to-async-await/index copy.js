@@ -2,9 +2,11 @@
 // See ./original.js for their older JavaScript code.
 
 async function delay(ms) {
-	return new Promise((resolve) => {
-		return setTimeout(resolve, ms);
-	});
+	return new Promise(
+		setTimeout((resolve) => {
+			resolve;
+		}, ms)
+	);
 }
 
 async function checkEmotion(knownEmotions, emotion) {
